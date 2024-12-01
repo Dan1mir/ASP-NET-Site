@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\automagazine8net\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|solutionrelative:automagazine8net\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\automagazine8net\\models\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|solutionrelative:automagazine8net\\models\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|c:\\users\\danimir\\source\\repos\\automagazine8net\\automagazine8net\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|solutionrelative:automagazine8net\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\automagazine8net\\models\\pageinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|solutionrelative:automagazine8net\\models\\pageinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\automagazine8net\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F734A3F-9603-4D12-9DA9-D482CBC3F11B}|AutoMagazine8Net\\AutoMagazine8Net.csproj|solutionrelative:automagazine8net\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AutoMagazine8Net\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AutoMagazine8Net\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T09:42:06.432Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Models\\IndexViewModel.cs",
+              "RelativeDocumentMoniker": "AutoMagazine8Net\\Models\\IndexViewModel.cs",
+              "ToolTip": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Models\\IndexViewModel.cs",
+              "RelativeToolTip": "AutoMagazine8Net\\Models\\IndexViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T10:40:52.68Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Models\\PageInfo.cs",
+              "RelativeDocumentMoniker": "AutoMagazine8Net\\Models\\PageInfo.cs",
+              "ToolTip": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Models\\PageInfo.cs",
+              "RelativeToolTip": "AutoMagazine8Net\\Models\\PageInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T10:53:11.935Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "AutoMagazine8Net\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Controllers\\CarController.cs",
+              "RelativeToolTip": "AutoMagazine8Net\\Controllers\\CarController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:11:32.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AutoMagazine8Net\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Danimir\\source\\repos\\AutoMagazine8Net\\AutoMagazine8Net\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AutoMagazine8Net\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T09:40:04.525Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1207,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

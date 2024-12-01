@@ -1,0 +1,36 @@
+﻿@model AutoMagazine8Net.Data.Models.Order
+
+<div>
+    <h3>Оформление заказа</h3>
+    <form asp-action="Checkout" asp-controller="Order" method="post" class="form-horizonatl">
+        <div class="form-horizonatl">
+            <label asp-for="Name"></label>
+        </div>
+        <div class="col-md-5">
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-horizonatl">
+            <label asp-for="SurName"></label>
+        </div>
+        <div class="col-md-5">
+            <input asp-for="SurName" class="form-control" />
+            <span asp-validation-for="SurName" class="text-danger"></span>
+        </div>
+        <div class="form-horizonatl">
+            <label asp-for="Phone"></label>
+        </div>
+        <div class="col-md-5">
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <div class="form-horizonatl">
+            <label asp-for="Email"></label>
+        </div>
+        <div class="col-md-5">
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Оформить Заказ"/>
+    </form>
+</div>

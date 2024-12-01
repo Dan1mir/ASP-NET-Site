@@ -1,0 +1,47 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    if (TempData["OrderProcessed"] != null && (bool)TempData["OrderProcessed"])
+    {
+                <script>
+                    alert('Заказ обработан!');
+                </script>
+    }
+}
+
+
+<div class="row">
+    <div class="col col-md-2">
+        @await Component.InvokeAsync("NavigationMenu")
+    </div>
+
+      <div class="row mb-2">
+
+        <div page-model="@Model.PageInfo" page-action="Index"
+             page-classes-enabled="true"
+             page-class="btn" page-class-normal="btn-default"
+             page-class-selected="btn-primary" class="pull-right" style="margin: 10px; display: flex; justify-content: center;">
+        </div>
+
+        @{
+            foreach (var car in Model.Cars)
+            {
+                <div class="col-lg-4 card shadow-sm">
+                    <img class="card-img-top" style="width: 100%; height: auto;" src="@car.Img" alt="@car.Name" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@car.Name</h5>
+                        <p class="card-text">@car.ShortDesc</p>
+                        <p class="card-text font-weight-bold">Цена: @car.Price.ToString("c")</p>
+                        <div>
+                            <button class="btn btn-primary btn-block" onclick="location.href = '@Url.Action("PageCar", "Car", new {carId=car.CarId})'">Подробнее</button>
+                            <button class="btn btn-success btn-block" onclick="location.href = '@Url.Action("Add2Cart", "ShopCart", new {carId=car.CarId})'">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        </div>
+    </div>
+</div>

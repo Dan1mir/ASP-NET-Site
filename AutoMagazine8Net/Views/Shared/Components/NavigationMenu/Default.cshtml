@@ -1,0 +1,14 @@
+﻿@model List<AutoMagazine8Net.Data.Models.Category>
+<a asp-action="Index" asp-controller="Home" class="btn btn-block btn-default">На главную</a>
+
+@foreach (var category in Model)
+{
+    string Class = (@category.CategoryId == ViewBag.SelectedCategory) ? "btn btn-block btn-primary" : "btn btn-block btn-default";
+        <a class="@Class"
+           asp-action="Index"
+           asp-controller="Home"
+           asp-route-catId="@category.CategoryId"
+           asp-route-page="1">
+        @category.Name
+        </a>
+}

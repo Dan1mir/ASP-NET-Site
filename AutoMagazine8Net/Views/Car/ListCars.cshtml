@@ -1,0 +1,40 @@
+﻿@model List<AutoMagazine8Net.Data.Models.Car>
+<h3 class="text-center mt-5 mb-3">@ViewBag.HeadText</h3>
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">№</th>
+            <th scope="col">Название</th>
+            <th scope="col">Краткое описание</th>
+            <th scope="col">Полное описание</th>
+            <th scope="col">На главной</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Ссылка к картинке</th>
+            <th scope="col">Редактирование</th>
+            <th scope="col">Удаление</th>
+        </tr>
+    </thead>
+    @{
+        int i = 1;
+        foreach (var car in Model)
+        {
+                    <tbody>
+                        <tr>
+                            <th scope="row">@Html.Raw(i++)</th>
+                            <th scope="row">@car.Name</th>
+                            <td>@car.ShortDesc</td>
+                            <td>@car.LongDesc</td>
+                            <td>@car.IsFavourite</td>
+                            <td>@car.Price</td>
+                            <td><img height="50px" src="@car.Img" /></td>
+                            <td><button class="btn btn-primary" href="#" onclick="location.href =('@Url.Action("EditCar", "Car", new {carId=car.CarId})')">Редактировать</button></td>
+                            <td>
+                        @Html.ActionLink("Удалить", "DeleteCar", "Car", new { carId = car.CarId },
+                            new { onclick = "return confirm('Вы уверены, что хотите удалить товар?')", @class = "btn btn-danger" })
+                            </td>
+                        </tr>
+                    </tbody>
+        }
+    }
+</table>

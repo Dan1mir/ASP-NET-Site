@@ -1,0 +1,13 @@
+﻿@model List<AutoMagazine8Net.Data.Models.Cart.ShopCartItem>
+
+<div class="container">
+    @foreach (var el in Model)
+    {
+            <div class="alert alert-warning mt-3">
+                <b>Автомобиль: </b> @el.Car.Name <br/>
+                <b>Цена: </b> @el.Car.Price.ToString("c") <br/>
+            </div>
+    }
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Оплатить</a>
+
+</div>

@@ -1,0 +1,33 @@
+﻿@model List<AutoMagazine8Net.Data.Models.Category>
+<h3 class="text-center mt-5 mb-3">@ViewBag.HeadText</h3>
+
+<table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">№</th>
+                <th scope="col">Название</th>
+                <th scope="col">Описание</th>
+                <th scope="col">Редактирование</th>
+                <th scope="col">Удаление</th>
+            </tr>
+        </thead>
+    @{
+        int i = 1;
+        foreach (var category in Model)
+        {
+                <tbody>
+                            <tr>
+                                <th scope="row">@Html.Raw(i++)</th>
+                                <th scope="row">@category.Name</th>
+                                <td>@category.Desc</td>
+                                <td><button class="btn btn-primary" href="#" onclick="location.href =('@Url.Action("EditCategory", "Category", new {categoryId = category.CategoryId})')">Редактировать</button></td>
+                                <td>
+                        @Html.ActionLink("Удалить", "DeleteCategory", "Category", new { categoryId = category.CategoryId },
+                            new { onclick = "return confirm('Вы уверены, что хотите удалить категорию?')", @class = "btn btn-danger" })
+                                </td>
+
+                            </tr>
+                </tbody>
+        }
+    }
+</table>

@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AutoMagazine8Net
+build_property.RootNamespace = AutoMagazine8Net
+build_property.ProjectDir = C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Car/AddCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEFkZENhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Car/EditCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVkaXRDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Car/ListCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXExpc3RDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Car/PageCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFBhZ2VDYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Category/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Category/ListCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTGlzdENhdGVnb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Order/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Shared/Components/NavigationMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2aWdhdGlvbk1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/ShopCart/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcENhcnRcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Danimir/source/repos/AutoMagazine8Net/AutoMagazine8Net/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-viqtruli4q
