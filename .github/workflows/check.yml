@@ -9,6 +9,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    steps:
+      # 1. Клонирование репозитория
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Настройка .NET Core SDK
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      # 3. Восстановление зависимостей
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # 4. Сборка проекта
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+  test:
+    runs-on: ubuntu-latest
+
     services:
       sqlserver:
         image: mcr.microsoft.com/mssql/server:2019-latest
@@ -24,42 +46,46 @@ jobs:
           ACCEPT_EULA: "Y"
 
     steps:
-    # 1. Клонирование репозитория
-    - name: Checkout code
-      uses: actions/checkout@v3
+      # 1. Клонирование репозитория
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    # 2. Настройка .NET Core SDK
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '8.0.x'
+      # 2. Настройка .NET Core SDK
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
 
-    # 3. Восстановление зависимостей
-    - name: Restore dependencies
-      run: dotnet restore
+      # 3. Восстановление зависимостей
+      - name: Restore dependencies
+        run: dotnet restore
 
-    # 4. Сборка проекта
-    - name: Build
-      run: dotnet build --no-restore --configuration Release
+      # 4. Запуск тестов
+      - name: Run tests
+        env:
+          ConnectionStrings__DefaultConnection: "Server=localhost,1433;Database=db;User Id=sa;Password=Str0ngP@ssw0rd!;Trusted_Connection=False;TrustServerCertificate=True;"
+        run: dotnet test --no-restore --verbosity normal
 
-    # 5. Запуск тестов
-    - name: Run solution
-      env:
-        ConnectionStrings__DefaultConnection: "Server=localhost,1433;Database=db;User Id=sa;Password=Str0ngP@ssw0rd!;Trusted_Connection=False;TrustServerCertificate=True;"
-      run: dotnet test --no-restore --verbosity normal
+  docker:
+    runs-on: ubuntu-latest
 
-    # 6. Логин в Docker Hub
-    - name: Log in to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: "danimir422"
-        password: "13DhtvzBuhfnm23"
+    steps:
+      # 1. Клонирование репозитория
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    # 7. Сборка и публикация Docker-образа
-    - name: Build and push Docker image
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        file: ./Dockerfile
-        push: true
-        tags: danimir422/net8asp:latest
+      # 2. Логин в Docker Hub
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: "danimir422"
+          password: "13DhtvzBuhfnm23"
+
+      # 3. Сборка и публикация Docker-образа
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: danimir422/net8asp:latest
