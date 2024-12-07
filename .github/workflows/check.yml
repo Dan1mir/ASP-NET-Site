@@ -1,6 +1,9 @@
 name: .NET Core CI/CD
 
-on: push
+on:
+  push:
+    branches:
+      - main 
 
 jobs:
   build:
@@ -59,4 +62,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: danimir422/ci-cd-test:latest
+        tags: danimir422/net8asp:latest
