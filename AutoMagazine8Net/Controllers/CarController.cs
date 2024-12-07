@@ -25,6 +25,29 @@ namespace AutoMagazine8Net.Controllers
                     Categories = db.Categories.ToList()
                 });
         }
+        [HttpGet("api/Cars")]
+        public IActionResult GetCars()
+        {
+            var cars = db.Cars.ToList();
+
+            var result = new
+            {
+                Cars = cars.Select(p => new
+                {
+                    p.CarId,
+                    p.Name,
+                    p.Price,
+                    Category = new
+                    {
+                        p.CategoryId,
+                    }
+                })
+            };
+
+            return Ok(result);
+        }
+    
+
         [HttpPost]
         public async Task<IActionResult> AddCar(Car car, IFormFile uploadedFile)
         {
@@ -60,7 +83,6 @@ namespace AutoMagazine8Net.Controllers
         {
             return View(db.Cars.Find(carId));
         }
-
         public IActionResult ListCars()
         {
             return View(db.Cars.ToList());

@@ -1,20 +1,21 @@
 using AutoMagazine8Net.Data;
 using AutoMagazine8Net.Data.Models.Cart;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
 builder.Services.AddControllersWithViews();
 
-string connection = builder.Configuration.GetConnectionString(name: "DefaultConnection");
-
+string connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<StoreContext>(options => options.UseSqlServer(connection));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped(sp => ShopCart.GetCart(sp));
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 
@@ -22,7 +23,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -36,5 +36,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllers();
 
 app.Run();

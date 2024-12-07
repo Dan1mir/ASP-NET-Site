@@ -84,3 +84,9 @@ C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\obj\Debug\net8.0
 C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\obj\Debug\net8.0\AutoMagazine8Net.pdb
 C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\obj\Debug\net8.0\AutoMagazine8Net.genruntimeconfig.cache
 C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\obj\Debug\net8.0\ref\AutoMagazine8Net.dll
+C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\obj\Debug\net8.0\AutoMagazine8Net.sourcelink.json
+C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Danimir\source\repos\AutoMagazine8Net\AutoMagazine8Net\obj\Debug\net8.0\AutoMagazine8Net.MvcApplicationPartsAssemblyInfo.cs
