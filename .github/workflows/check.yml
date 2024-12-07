@@ -6,28 +6,6 @@ on:
       - master 
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      # 1. Клонирование репозитория
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      # 2. Настройка .NET Core SDK
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
-
-      # 3. Восстановление зависимостей
-      - name: Restore dependencies
-        run: dotnet restore
-
-      # 4. Сборка проекта
-      - name: Build
-        run: dotnet build --no-restore --configuration Release
-
   test:
     runs-on: ubuntu-latest
 
