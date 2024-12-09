@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: webapp:local
+    image: net8asp:local
     ports:
       - "80:80"
     environment:
