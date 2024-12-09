@@ -60,12 +60,12 @@ jobs:
           username: "danimir422"
           password: "13DhtvzBuhfnm23"
 
-      # 3. Установка Docker-Compose
-      - name: Set up Docker Compose
-        run: sudo apt-get install docker-compose
-
-      # 4. Сборка и публикация Docker-образа
-      - name: Build Docker Compose image
-        run: |
-          docker-compose build | tee build.log
+      # 3. Сборка и публикация Docker-образа
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: danimir422/net8asp:latest
 
