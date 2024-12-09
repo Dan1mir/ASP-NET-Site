@@ -65,7 +65,7 @@ jobs:
         run: sudo apt-get install docker-compose
 
       # 4. Сборка и публикация Docker-образа
-      - name: Build and push Docker Compose image
+      - name: Build Docker Compose image
         run: |
-          docker-compose build
+          docker-compose build | tee build.log
 
