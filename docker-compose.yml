@@ -4,11 +4,13 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: net8asp:local
+    image: automagazine8net:latest
     ports:
       - "80:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./logs:/app/logs
     depends_on:
       - db
   db:
@@ -19,4 +21,6 @@ services:
       - MSSQL_PID=Express
     ports: 
       - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
     restart: on-failure
