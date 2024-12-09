@@ -1,16 +1,21 @@
-﻿version: '8.0'
-services:
-  webapp:
-    build: .
-    image: mcr.microsoft.com/dotnet/aspnet:8.0
-    ports:
-      - "80:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    depends_on:
-      - db
+﻿services:
+  net8shop:
+      container_name: net-8-api
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        image: mcr.microsoft.com/dotnet/aspnet:8.0
+        ports:
+          - "80:80"
+        environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+        depends_on:
+          - db
   db:
+    container_name: net-8-db
     image: mcr.microsoft.com/mssql/server
+    ports:
+      - "69:69"
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Str0ngP@ssw0rd!
