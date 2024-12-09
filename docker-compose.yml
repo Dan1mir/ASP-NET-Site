@@ -2,8 +2,8 @@
   net8shop:
       container_name: net-8-api
         build: 
-            context: .
-            dockerfile: Dockerfile
+          context: .
+          dockerfile: Dockerfile
         image: mcr.microsoft.com/dotnet/aspnet:8.0
         ports:
           - "80:80"
