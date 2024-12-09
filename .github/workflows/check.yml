@@ -68,5 +68,4 @@ jobs:
       - name: Build and push Docker Compose image
         run: |
           docker-compose build
-          docker-compose push
 
