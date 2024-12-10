@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: automagazine8net:latest
+    image: mcr.microsoft.com/dotnet/aspnet:8.0
     ports:
       - "80:80"
     environment:

@@ -3,6 +3,7 @@ using AutoMagazine8Net.Data.Models;
 using AutoMagazine8Net.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.InteropServices;
 
 namespace AutoMagazine8Net.Controllers
 {
@@ -25,6 +26,7 @@ namespace AutoMagazine8Net.Controllers
                     Categories = db.Categories.ToList()
                 });
         }
+        // 𐐘⚔ඞ
         [HttpGet("api/Cars")]
         public IActionResult GetCars()
         {
@@ -46,7 +48,79 @@ namespace AutoMagazine8Net.Controllers
 
             return Ok(result);
         }
-    
+
+        [HttpGet("api/Car/{id}")]
+        public IActionResult GetCar(int id)
+        {
+            var car = db.Cars.FirstOrDefault(p => p.CarId == id);
+
+            if (car == null)
+            {
+                return NotFound(new { message = "Car not found" });
+            }
+
+            var result = new
+            {
+                car.CarId,
+                car.Name,
+                car.Price,
+                Category = new
+                {
+                    car.CategoryId,
+                }
+            };
+
+            return Ok(result);
+        }
+
+        [HttpPost("api/Cars")]
+        public IActionResult CreateCar([FromBody] Car car) 
+        { 
+            if (car == null) 
+            { 
+                return BadRequest(new { message = "Invalid data" }); 
+            } 
+            db.Cars.Add(car); 
+            db.SaveChanges(); 
+            return CreatedAtAction(nameof(GetCars), new { id = car.CarId }, car); 
+        }
+        [HttpPut("api/Car/{id}")]
+        public IActionResult UpdateCar(int id, [FromBody] Car updatedCar)
+        {
+            if (updatedCar == null || updatedCar.CarId != id)
+            {
+                return BadRequest(new { message = "Invalid data" });
+            }
+
+            var car = db.Cars.FirstOrDefault(p => p.CarId == id);
+            if (car == null)
+            {
+                return NotFound(new { message = "Car not found" });
+            }
+
+            car.Name = updatedCar.Name;
+            car.Price = updatedCar.Price;
+            car.CategoryId = updatedCar.CategoryId;
+
+            db.SaveChanges();
+
+            return Ok(new { message = "Car updated successfully" });
+        }
+        [HttpDelete("api/Car/{id}")]
+        public IActionResult DeleteCar(int id)
+        {
+            var car = db.Cars.FirstOrDefault(p => p.CarId == id);
+            if (car == null)
+            {
+                return NotFound(new { message = "Car not found" });
+            }
+
+            db.Cars.Remove(car);
+            db.SaveChanges();
+
+            return Ok(new { message = "Car deleted successfully" });
+        }
+        // ඞ
 
         [HttpPost]
         public async Task<IActionResult> AddCar(Car car, IFormFile uploadedFile)
