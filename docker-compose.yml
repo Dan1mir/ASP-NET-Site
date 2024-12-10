@@ -1,22 +1,26 @@
-﻿version: '3.9'
+﻿version: '3.8'
 services:
-  webapp:
-    build: 
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "Strong!Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+
+  web:
+    build:
       context: .
       dockerfile: Dockerfile
-    image: mcr.microsoft.com/dotnet/aspnet:8.0
     ports:
       - "80:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - db
-  db:
-    image: mcr.microsoft.com/mssql/server
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=Str0ngP@ssw0rd!
-      - MSSQL_PID=Express
-    ports: 
-      - "1433:1433"
-    restart: on-failure
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
